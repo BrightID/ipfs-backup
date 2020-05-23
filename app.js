@@ -31,7 +31,7 @@ async function main() {
   app.put(
     "/backups/:key1/:key2",
     asyncMiddleware(async (req, res) => {
-      const { data } = await req.body;
+      const { data } = req.body;
       const { key1, key2 } = req.params;
       const path = `/${key1}/${key2}`;
 
@@ -49,7 +49,7 @@ async function main() {
 
 const port = process.env.PORT || 3000;
 app.listen(port, () =>
-  console.log(`Notifications Service running at http://localhost:${port}`)
+  console.log(`Backup Service running at http://localhost:${port}`)
 );
 
 main();
