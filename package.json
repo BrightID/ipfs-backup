@@ -18,9 +18,10 @@
   "homepage": "https://github.com/BrightID/ipfs-backup#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "ipfs": "^0.44.0"
+    "ipfs-http-client": "^44.1.0"
   },
   "devDependencies": {
+    "babel-eslint": "^10.1.0",
     "eslint": "^7.1.0",
     "prettier": "^2.0.5"
   }
